@@ -3,7 +3,7 @@ package co.id.ant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class PlayWithLambda {
 
 	private static List<String> listOfElements;
 
@@ -11,14 +11,14 @@ public class Main {
 
 		prepareList();
 		
-		testUsingNativeJavaExpression();
+		sarchUsingNativeJavaExpression();
 		
-		testUsingLambdaExpression();
+		searchUsingLambdaExpression();
 
 	}
 
 	
-	private static void testUsingNativeJavaExpression() {
+	private static void sarchUsingNativeJavaExpression() {
 		Searchable searchable = new Searchable() {
 			@Override
 			public String search(List<String> elements, String textToSearch) {
@@ -36,7 +36,7 @@ public class Main {
 	}
 
 	
-	private static void testUsingLambdaExpression() {
+	private static void searchUsingLambdaExpression() {
 
 		Searchable lambdaSearchable = (List<String> elements, String textToSearch) -> {
 			int i = 0;
