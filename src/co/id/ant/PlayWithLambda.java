@@ -11,14 +11,14 @@ public class PlayWithLambda {
 
 		prepareList();
 		
-		sarchUsingNativeJavaExpression();
+		searchUsingNativeJavaExpression();
 		
 		searchUsingLambdaExpression();
 
 	}
 
 	
-	private static void sarchUsingNativeJavaExpression() {
+	private static void searchUsingNativeJavaExpression() {
 		Searchable searchable = new Searchable() {
 			@Override
 			public String search(List<String> elements, String textToSearch) {
